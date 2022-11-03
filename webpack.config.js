@@ -91,7 +91,21 @@ module.exports = {
 						presets: ['@babel/preset-env', '@babel/preset-react']
 					}
 				}
-			}
+			},
+			{
+				loader: "webpack-preprocessor-loader",
+				options: {
+				  debug: process.env.NODE_ENV !== "product",
+				  directives: {
+					secret: false,
+				  },
+				  params: {
+					ENV: process.env.NODE_ENV,
+					LANG : "en"
+				  },
+				  verbose: false,
+				},
+			  }
 		]
 	}
 }
