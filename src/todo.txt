@@ -1,2 +1,3 @@
-preprocessor for multi languages
-scroll logic 
+preprocessor for multi languages DONE
+loading screen 
+
